@@ -1,0 +1,21 @@
+﻿@model BookVm
+
+<div class="container">
+    <h2>Create Book</h2>
+    <form method="post">
+        <div class="mb-3 mt-3">
+            <label for="title" class="form-label">Title:</label>
+            <input type="text" class="form-control" value="@Model.Title" id="title" placeholder="Enter title of book" name="title">
+        </div>
+        <div class="mb-3">
+            <label for="pageNumbers" class="form-label">Page Number:</label>
+            <input type="number" class="form-control" value="@Model.PageNumbers" id="pageNumbers" placeholder="Enter Page number" name="pageNumbers">
+        </div>
+        <div class="mb-3">
+            <label for="genre" class="form-label">Genre:</label>
+            <input type="text" class="form-control" value="@Model.Genre" id="genre" placeholder="Enter genre" name="genre">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <a href="~/Books/Index">Back to List</a>
+</div>

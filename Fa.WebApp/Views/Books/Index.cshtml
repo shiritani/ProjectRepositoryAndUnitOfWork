@@ -1,0 +1,23 @@
+﻿@model List<BookVm>
+
+<h2>List Books</h2>
+<a href="~/Books/Create">Create Book</a>
+<table class="table table-bordered">
+    <tr>
+        <th>Id</th>
+        <th>Title</th>
+        <th>PageNumbers</th>
+        <th>Genre</th>
+        <th></th>
+    </tr>
+    @foreach (var bookVm in Model)
+    {
+        <tr>
+            <td>@bookVm.Id</td>
+            <td>@bookVm.Title</td>
+            <td>@bookVm.PageNumbers</td>
+            <td>@bookVm.Genre</td>
+            <td><a href="~/Books/Edit/@bookVm.Id">Edit</a> | <a href="~/Books/Delete/@bookVm.Id" onclick="return confirm('are you sure you want to delete this item?')">Delete</a></td>
+        </tr>
+    }
+</table>

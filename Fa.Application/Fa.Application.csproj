@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Fa.Domain\Fa.Domain.csproj" />
+    <ProjectReference Include="..\Fa.Infrastructure\Fa.Infrastructure.csproj" />
+    <ProjectReference Include="..\Fa.Services\Fa.Services.csproj" />
+  </ItemGroup>
+
+</Project>
